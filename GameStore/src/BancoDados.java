@@ -14,7 +14,7 @@ public class BancoDados {
 	public void ConectaBD(String user, String senha) {
 		
 		try{
-			String jdbc = "jdbc:sqlserver://localhost:1433;databaseName=GAMESTORE";
+			String jdbc = "jdbc:sqlserver://localhost:3306;databaseName=GAMESTORE";
 			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver").newInstance();
 			con = DriverManager.getConnection(jdbc, user, senha);
 			JOptionPane.showMessageDialog(null,"Conexao realizada com sucesso.");
